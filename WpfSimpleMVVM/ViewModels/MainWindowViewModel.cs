@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
@@ -160,7 +157,7 @@ namespace WpfSimpleMVVM.ViewModels
                 await Task.Run(() => SecondNameOutput = p.SecondName);
                 await Task.Run(() => EmailOutput = p.EMail);
                 await Task.Run(() => DateOutput = p.Date.ToShortDateString());
-                await Task.Run(() => BirthDayOutput = p.isBithday.ToString());
+                await Task.Run(() => BirthDayOutput = p.IsBithday.ToString());
                 await Task.Run(() => AdultOutput = p.IsAdult.ToString());
                 await Task.Run(() => SunSignOutput = p.SunSign);
                 await Task.Run(() => ChineseSignOutput = p.ChineseSign);

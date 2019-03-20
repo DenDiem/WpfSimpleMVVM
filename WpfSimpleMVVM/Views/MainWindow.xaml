@@ -18,7 +18,7 @@
             <TextBox HorizontalAlignment="Left" Height="38" Margin="177,161,0,0" TextWrapping="Wrap" Text="{Binding Emailinput}" VerticalAlignment="Top" Width="226" FontSize="22"/>
             <DatePicker HorizontalAlignment="Left" Margin="177,232,0,0" VerticalAlignment="Top" FontSize="22" Width="226" SelectedDate="{Binding Dateinput,  Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="399" Margin="587,37,0,0" VerticalAlignment="Top" Width="377">
+        <Grid HorizontalAlignment="Left" Height="399" Margin="587,37,0,0" VerticalAlignment="Top" Width="435">
             <Label Content="Name:" HorizontalAlignment="Left" Margin="15,41,0,0" VerticalAlignment="Top" FontSize="22"/>
             <Label Content="EMail:" HorizontalAlignment="Left" Margin="15,126,0,0" VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="0.548,0.824"/>
             <Label Content="Second Name:" HorizontalAlignment="Left" Margin="15,86,0,0" VerticalAlignment="Top" FontSize="22"/>

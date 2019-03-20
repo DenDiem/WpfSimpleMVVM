@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WpfSimpleMVVM.Exeptions;
 
 namespace WpfSimpleMVVM.Models
@@ -75,8 +71,8 @@ namespace WpfSimpleMVVM.Models
         }
         public string SunSign { get { return CalculateSimpleSign(); } }
         public string ChineseSign { get { return CalculateChinaSign(); } }
-        public bool isBithday { get { return isBithdaymethod(); } }
-        public bool IsAdult { get { return isAdult(); } }
+        public bool IsBithday { get { return IsBithdaymethod(); } }
+        public bool IsAdult { get { return IsAdultMethod(); } }
         
 
 
@@ -98,13 +94,13 @@ namespace WpfSimpleMVVM.Models
             return DateTime.Now.Year - Date.Year;
         }
 
-        private bool isAdult()
+        private bool IsAdultMethod()
         { 
             return (CalculateAge() > 18);
         }
 
 
-        private bool isBithdaymethod()
+        private bool IsBithdaymethod()
         {
             return DateTime.Now.Year == Date.Year && DateTime.Now.Month == Date.Month &&
                    DateTime.Now.Day == Date.Day;
